@@ -41,7 +41,8 @@ paragraphs.forEach((paragraph) => {
 //Question 6:
 const resultsContainer = document.querySelector(".results");
 
-resultsContainer.innerHTML = "<p>New paragraph<p>";
+resultsContainer.style.backgroundColor = "yellow";
+resultsContainer.innerHTML = "<p>New paragraph</p>";
 
 //Question 7:
 
@@ -62,12 +63,10 @@ function createCats(cats) {
     if (cat.name) {
       catName = cat.name;
     }
-
     if (cat.age) {
       catAge = cat.age;
     }
-
-    newHtml = newHtml + `<div><h3>${catName}<\h3><p>${catAge}<\p>`;
+    newHtml = newHtml + `<div><h5>${catName}<\h5><p>${catAge}</p></div>`;
   });
   return newHtml;
 }
